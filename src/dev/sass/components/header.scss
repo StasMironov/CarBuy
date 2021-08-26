@@ -1,0 +1,11 @@
+.header {
+  flex: 0 0 auto;
+  bottom: 0;
+  z-index: 300;
+  min-height: 186px;
+  background-color: $blue-1;
+
+  @media (max-width: 1024px) {
+    min-height: 128px;
+  }
+}

@@ -1,0 +1,46 @@
+.form-group {
+  position: relative;
+  max-width: 100px;
+
+  &__label {
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    top: -7px;
+    display: inline-block;
+    left: 6px;
+    width: max-content;
+    margin: 0;
+    padding: 0 5px;
+  }
+
+  &__input {
+    border-radius: 5px;
+    border: 1px solid $gray-2;
+    font-size: 10px;
+    height: 20px;
+    padding: 0 10px;
+    transition: 0.3s;
+    background-color: white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $blue-2;
+      background-color: white;
+    }
+
+    -webkit-autofill,
+    -webkit-autofill:hover,
+    -webkit-autofill:focus {
+      border: 1px solid green;
+      -webkit-text-fill-color: green;
+      -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+  }
+}
+

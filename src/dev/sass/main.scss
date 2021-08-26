@@ -1,0 +1,165 @@
+@import "./normalize.scss";
+@import "./colors.scss";
+@import "./media.scss";
+@import "./fonts.scss";
+@import "./libs/libs.scss";
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+  //cursor: none !important;
+}
+
+.bitrix-include-areas {
+  * {
+    cursor: auto !important;
+  }
+}
+
+:root {
+  --wScroll: 0px;
+}
+
+html {
+  height: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 15px;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $blue-2;
+}
+
+.container {
+  width: 100%;
+  padding: 0 74px;
+  max-width: 1024px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  display: inline;
+  color: inherit;
+  text-decoration: none;
+  transition: linear 0.3s;
+}
+
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.title-1 {
+  font-size: 25px;
+  font-weight: 600;
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+.b-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.b-page {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1 0 auto;
+}
+
+h2 {
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 21px;
+  text-transform: uppercase;
+
+  &:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 109px;
+    background-color: $green-1;
+    left: 0;
+    right: auto;
+    bottom: -5px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./link.scss";
+@import "./components/btn.scss";
+@import "./components/company-benefit.scss";
+@import "./components/benefit.scss";
+@import "./components/list.scss";
+@import "./components/company-about.scss";
+@import "./components/company-advantage.scss";
+@import "./components/slider.scss";
+@import "./components/company-info.scss";
+@import "./components/form-group.scss";
+@import "./components/checkbox.scss";
+@import "./components/file.scss";

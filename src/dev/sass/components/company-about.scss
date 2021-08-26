@@ -1,0 +1,30 @@
+.company-about {
+  margin-bottom: 145px;
+
+  &__container {
+    background: url(../img/bg-about.png) no-repeat 93% 256%;
+    padding-bottom: 92px;
+  }
+
+  &__quote {
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 542px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__txt {
+    max-width: 473px;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  h2 {
+    margin-bottom: 26px;
+
+    &:after {
+      width: 75px;
+    }
+  }
+}

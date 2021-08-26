@@ -1,0 +1,159 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Корзина'
+
+block content
+	main.main
+		.company-info
+			.company-info__container.container
+				form.company-info__box
+					.company-info__bloc
+						.company-info__title Данные автомобиля
+						.company-info__grid 
+							.company-info__column.company-info__column--mark
+								.form-group
+									.form-group__label Марка 
+									input.form-group__input(type="text" name="mark")
+							.company-info__column.company-info__column--model
+								.form-group
+									.form-group__label Модель
+									input.form-group__input(type="text" name="model")
+							.company-info__column.company-info__column--motor
+								.form-group
+									.form-group__label Мотор
+									input.form-group__input(type="text" name="motor")
+							.company-info__column.company-info__column--year
+								.form-group
+									.form-group__label Год
+									input.form-group__input(type="date" name="year")
+							.company-info__column.company-info__column--fuel
+								.form-group
+									.form-group__label Топливо
+									input.form-group__input(type="number" name="fuel" min="0")
+							.company-info__column.company-info__column--kpp
+								.form-group
+									.form-group__label КПП
+									input.form-group__input(type="number" name="kpp" min="0")
+							.company-info__column.company-info__column--mileage
+								.form-group
+									.form-group__label Пробег
+									input.form-group__input(type="number" name="mileage" min="0")
+							.company-info__column.company-info__column--tech
+								.form-group
+									.form-group__label Техосмотр
+									input.form-group__input(type="date" name="tech")
+							.company-info__column.company-info__column--price
+								.form-group
+									.form-group__label Желаемая цена
+									input.form-group__input(type="number" name="price" min="0")
+							.company-info__column.company-info__column--photo
+								label.file.js-file(for="file")
+									input#file.file__input(type="file" name="files[]" multiple accept=".pdf, .doc, .docx, .ppt, .pptx")
+									span.file__label.btn Добавить фото
+								#file-list-display
+					.company-info__bloc.company-info__bloc--dop
+						.company-info__title Другие данные
+						.company-info__grid.company-info__grid--dop 
+							.company-info__column.company-info__column--name
+								.form-group
+									.form-group__label Имя
+									input.form-group__input(type="text" name="name")
+							.company-info__column.company-info__column--mail
+								.form-group
+									.form-group__label Почта
+									input.form-group__input(type="email" name="mail")
+							.company-info__column.company-info__column--phone
+								.form-group
+									.form-group__label Телефон
+									input.form-group__input(type="text" name="phone")
+							.company-info__column.company-info__column--city
+								.form-group
+									.form-group__label Город
+									input.form-group__input(type="text" name="city")
+							.company-info__column.company-info__column--comment
+								.form-group
+									.form-group__label Сообщение
+									textarea.form-group__input(type="text" name="comment")
+						label.checkbox
+							input(type='checkbox')
+							span Я согласен(на), что фирма использует мои личные данные на основе  <i>Политики конфедициальности</i> 
+						button.btn.btn--w190.btn--h22(type="submit") Отправить
+
+		.company-advantage
+			.company-advantage__container.container 
+				.company-advantage__box 
+					.company-advantage__icon
+						img(src="./img/ic-car.png", alt="icon")
+					.company-advantage__note Желаешь продать машину быстро, но не хочешь заниматься этим самостоятельно? Доверь нам все проблемы, связанные с продажей машины!
+					.slider.js-slider 
+						.slider__wrapper.swiper-wrapper
+							.slider__slide.swiper-slide
+								.slider__icon 
+									img(src="./img/ic-clock.svg", alt="icon")
+								.slider__title Быстро
+								.slider__txt Наша цель помочь вам продать машину как можно быстрее, оформив все необходимые докуметы в ускоренном порядке, и мы сделаем для этого всё от себя зависящее.
+							.slider__slide.swiper-slide
+								.slider__icon 
+									img(src="./img/ic-ok3.svg", alt="icon")
+								.slider__title Просто
+								.slider__txt Мы купим вашу машину при любом условии! Не важно есть ли на ней техосмотр, нуждается ли она в ремонте или имеет неисправности; Мы приобритём вашу машину без лишних задержек и вопросов.
+							.slider__slide.swiper-slide
+								.slider__icon 
+									img(src="./img/ic-euro.svg", alt="icon")
+								.slider__title Прибыльно
+								.slider__txt Разумеется вы хотели бы продать свою машину с максимальной выгодой. Мы способны предложить вам за ваш автомобиль самую высокую цену на рынке.
+		.company-about
+			.company-about__container.container 
+				h2 О нас
+				.company-about__quote Мы действуем на рынке автомобилей уже много лет и знаем как оформить сделку быстро и без проблем.
+				.company-about__txt Первое, что следует сделать заинтересованному в продаже машины человеку – связаться с нами, заполнив контактную форму на сайте или позвонив по телефону. На основании полученного со слов описания машины мы назовем предварительную стоимость. Точное ценовое предложение станет известно после проведения оценки, которую выполнит наш специалист, выехав для этого в удобное для клиента место.
+				.benefit.benefit--simple
+					.benefit__items
+						.benefit__item
+							.benefit__img 
+								img(src="./img/ic-royal.svg" alt="")
+							.benefit__txt Предлагаем самые высокие цены
+						.benefit__item
+							.benefit__img 
+								img(src="./img/ic-letter.svg" alt="")
+							.benefit__txt Оформляем документы прямо на месте
+						.benefit__item
+							.benefit__img 
+								img(src="./img/ic-ok2.svg" alt="")
+							.benefit__txt Выкупаем машины в любом состоянии
+		.company-benefit
+			.company-benefit__container.container 
+				.company-benefit__grid
+					.company-benefit__column
+						h2 COMPANY NAME
+						p.company-benefit__txt Каждый автовладелец хотя бы раз сталкивался с необходимостью продать машину. Конечно же, вы хотите селать это быстрее и с максимальной выгодой. Наши специалисты возьмут на себя все проблемы! Нам можно полностью доверять.
+						p.company-benefit__txt Мы не являемся кредитной организацией или ломбардом.
+						p.company-benefit__txt Мы покупаем ваши машины, в любом виде и состоянии.
+						p.company-benefit__txt Да, так просто!
+						p.company-benefit__txt Наша цель - купить вашу машину максимально быстро, просто и выгодно для вас.
+						.benefit
+							.benefit__items
+								.benefit__item
+									.benefit__img 
+										img(src="./img/ic-clock.svg" alt="")
+									.benefit__txt Быстро
+								.benefit__item
+									.benefit__img 
+										img(src="./img/ic-qu.svg" alt="")
+									.benefit__txt Качественно
+								.benefit__item
+									.benefit__img 
+										img(src="./img/ic-trust.svg" alt="")
+									.benefit__txt Надежно
+					.company-benefit__column
+						ul.list
+							li Машину не надо подготавливать к продаже
+							li Покупаем машины любого года выпуска и в любом состоянии
+							li Покупаем машины без техосмотра и страховки
+							li Покупаем машины не работающие и нуждающиеся в ремонте
+							li Предложим за вашу машину больше остальных
+							li Сразу же выплачиваем деньги
+							li Работаем по всей Эстонии и сами выезжаем на место
+	
+block script

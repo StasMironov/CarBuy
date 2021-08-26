@@ -1,0 +1,141 @@
+.company-info {
+  margin-bottom: 38px;
+
+  &__container {
+    background: url(../img/bg-info.png) no-repeat 100% 42%;
+  }
+
+  &__box {
+    padding-left: 37px;
+    max-width: 527px;
+    width: 100%;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-areas:
+      "mark model motor year"
+      "fuel kpp mileage tech"
+      "price photo photo photo";
+    grid-gap: 17px 30px;
+
+    &--dop {
+      grid-gap: 24px 6px;
+      margin-bottom: 17px;
+      grid-template-areas:
+        "name mail"
+        "phone city"
+        "comment comment";
+
+      .form-group {
+        max-width: initial;
+      }
+
+      textarea {
+        height: 58px;
+        padding-top: 8px;
+      }
+    }
+  }
+
+  &__column {
+    min-height: 20px;
+
+    &--mark {
+      grid-area: mark;
+    }
+
+    &--model {
+      grid-area: model;
+    }
+
+    &--motor {
+      grid-area: motor;
+    }
+
+    &--year {
+      grid-area: year;
+    }
+
+    &--fuel {
+      grid-area: fuel;
+    }
+
+    &--kpp {
+      grid-area: kpp;
+    }
+
+    &--mileage {
+      grid-area: mileage;
+    }
+
+    &--tech {
+      grid-area: tech;
+    }
+
+    &--price {
+      grid-area: price;
+
+      .form-group__label {
+        top: -5px;
+        left: 4px;
+        padding-left: 2px;
+      }
+    }
+
+    &--photo {
+      grid-area: photo;
+    }
+
+    &--name {
+      grid-area: name;
+      max-width: 162px;
+      width: 100%;
+    }
+
+    &--comment {
+      grid-area: comment;
+    }
+
+    &--phone {
+      grid-area: phone;
+      max-width: 162px;
+      width: 100%;
+    }
+
+    &--city {
+      grid-area: city;
+    }
+
+    &--mail {
+      grid-area: mail;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 37px;
+    padding-right: 53px;
+  }
+
+  &__bloc {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &--dop {
+      max-width: 385px;
+      width: 100%;
+
+      .company-info__title {
+        padding-right: 10px;
+        margin-bottom: 15px;
+      }
+
+      .btn {
+        margin-right: 94px;
+      }
+    }
+  }
+}

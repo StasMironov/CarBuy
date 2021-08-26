@@ -1,0 +1,19 @@
+.link {
+  display: inline-block;
+
+  &__icon {
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &--special {
+    display: flex;
+    align-items: center;
+  }
+}

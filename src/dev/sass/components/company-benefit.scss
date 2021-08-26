@@ -1,0 +1,16 @@
+.company-benefit {
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 370px;
+    max-width: 909px;
+    width: 100%;
+    grid-column-gap: 70px;
+    margin: 0 auto;
+  }
+
+  &__column {
+    &:last-child {
+      padding-top: 9px;
+    }
+  }
+}

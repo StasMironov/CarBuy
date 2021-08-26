@@ -1,0 +1,26 @@
+.list {
+  li {
+    position: relative;
+    font-weight: 700;
+    font-size: 15px;
+    padding-left: 40px;
+    max-width: 309px;
+    width: 100%;
+
+    &:not(:first-child) {
+      margin-top: 23px;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 22px;
+      background-image: url("../img/ic-ok.svg");
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.checkbox {
+  display: block;
+  margin: 0 0 13px 0;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+
+  input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+  span {
+    display: inline-block;
+    position: relative;
+    padding: 1px 0 0 19px;
+    line-height: 1.2;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: background 0.3s ease;
+      background: transparent 0 0 no-repeat;
+      border-radius: 5px;
+      border: 1px solid $gray-2;
+      background-position: 60% 57%;
+      background-size: 10px;
+      background-repeat: no-repeat;
+    }
+
+    &:hover:before {
+      filter: brightness(110%);
+    }
+
+    i {
+      font-style: normal;
+      color: $green-1;
+    }
+  }
+
+  input[type="checkbox"]:checked + span:before {
+    background: url("../img/ic-ok3.svg");
+    background-position: 61% 56%;
+    background-size: 10px;
+    background-repeat: no-repeat;
+  }
+}

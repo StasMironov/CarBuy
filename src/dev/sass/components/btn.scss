@@ -1,0 +1,28 @@
+.btn {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  background-color: $green-3;
+  color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+
+  &:hover {
+    background-color: $green-2;
+    color: $blue-2;
+  }
+
+  &--w190 {
+    width: 190px;
+  }
+
+  &--h22 {
+    height: 22px;
+  }
+}

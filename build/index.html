@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Корзина</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <header class="header"></header>
+    <main class="main">
+      <div class="company-info">
+        <div class="company-info__container container">
+          <form class="company-info__box">
+            <div class="company-info__bloc">
+              <div class="company-info__title">Данные автомобиля</div>
+              <div class="company-info__grid"> 
+                <div class="company-info__column company-info__column--mark">
+                  <div class="form-group">
+                    <div class="form-group__label">Марка </div>
+                    <input class="form-group__input" type="text" name="mark">
+                  </div>
+                </div>
+                <div class="company-info__column company-info__column--model">
+                  <div class="form-group">
+                    <div class="form-group__label">Модель</div>
+                    <input class="form-group__input" type="text" name="model">
+                  </div>
+                </div>
+                <div class="company-info__column company-info__column--motor">
+                  <div class="form-group">
+                    <div class="form-group__label">Мотор</div>
+                    <input class="form-group__input" type="text" name="motor">
+                  </div>
+                </div>
+                <div class="company-info__column company-info__column--year">
+                  <div class="form-group">
+                    <div class="form-group__label">Год</div>
+                    <input class="form-group__input" type="date" name="year">
+                  </div>
+                </div>
+                <div class="company-info__column company-info__column--fuel">
+                  <div class="form-group">
+                    <div class="form-group__label">Топливо</div>
+                    <input class="form-group__input" type="number" name="fuel" min="0">
+                  </div>
+                </div>
+                <div class="company-info__column company-info__column--kpp">
+                  <div class="form-group">
+                    <div class="form-group__label">КПП</div>
+                    <input class="form-group__input" type="number" name="kpp" min="0">
+                  </div>
+                </div>
+                <div class="company-info__column company-info__column--mileage">
+                  <div class="form-group">
+                    <div class="form-group__label">Пробег</div>
+                    <input class="form-group__input" type="number" name="mileage" min="0">
+                  </div>
+                </div>
+                <div class="company-info__column company-info__column--tech">
+                  <div class="form-group">
+                    <div class="form-group__label">Техосмотр</div>
+                    <input class="form-group__input" type="date" name="tech">
+                  </div>
+                </div>
+                <div class="company-info__column company-info__column--price">
+                  <div class="form-group">
+                    <div class="form-group__label">Желаемая цена</div>
+                    <input class="form-group__input" type="number" name="price" min="0">
+                  </div>
+                </div>
+                <div class="company-info__column company-info__column--photo">
+                  <label class="file js-file" for="file">
+                    <input class="file__input" id="file" type="file" name="files[]" multiple accept=".pdf, .doc, .docx, .ppt, .pptx"><span class="file__label btn">Добавить фото</span>
+                  </label>
+                  <div id="file-list-display"></div>
+                </div>
+              </div>
+            </div>
+            <div class="company-info__bloc company-info__bloc--dop">
+              <div class="company-info__title">Другие данные</div>
+              <div class="company-info__grid company-info__grid--dop"> 
+                <div class="company-info__column company-info__column--name">
+                  <div class="form-group">
+                    <div class="form-group__label">Имя</div>
+                    <input class="form-group__input" type="text" name="name">
+                  </div>
+                </div>
+                <div class="company-info__column company-info__column--mail">
+                  <div class="form-group">
+                    <div class="form-group__label">Почта</div>
+                    <input class="form-group__input" type="email" name="mail">
+                  </div>
+                </div>
+                <div class="company-info__column company-info__column--phone">
+                  <div class="form-group">
+                    <div class="form-group__label">Телефон</div>
+                    <input class="form-group__input" type="text" name="phone">
+                  </div>
+                </div>
+                <div class="company-info__column company-info__column--city">
+                  <div class="form-group">
+                    <div class="form-group__label">Город</div>
+                    <input class="form-group__input" type="text" name="city">
+                  </div>
+                </div>
+                <div class="company-info__column company-info__column--comment">
+                  <div class="form-group">
+                    <div class="form-group__label">Сообщение</div>
+                    <textarea class="form-group__input" type="text" name="comment"></textarea>
+                  </div>
+                </div>
+              </div>
+              <label class="checkbox">
+                <input type="checkbox"><span>Я согласен(на), что фирма использует мои личные данные на основе  <i>Политики конфедициальности</i> </span>
+              </label>
+              <button class="btn btn--w190 btn--h22" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="company-advantage">
+        <div class="company-advantage__container container"> 
+          <div class="company-advantage__box"> 
+            <div class="company-advantage__icon"><img src="./img/ic-car.png" alt="icon"></div>
+            <div class="company-advantage__note">Желаешь продать машину быстро, но не хочешь заниматься этим самостоятельно? Доверь нам все проблемы, связанные с продажей машины!</div>
+            <div class="slider js-slider"> 
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__icon"> <img src="./img/ic-clock.svg" alt="icon"></div>
+                  <div class="slider__title">Быстро</div>
+                  <div class="slider__txt">Наша цель помочь вам продать машину как можно быстрее, оформив все необходимые докуметы в ускоренном порядке, и мы сделаем для этого всё от себя зависящее.</div>
+                </div>
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__icon"> <img src="./img/ic-ok3.svg" alt="icon"></div>
+                  <div class="slider__title">Просто</div>
+                  <div class="slider__txt">Мы купим вашу машину при любом условии! Не важно есть ли на ней техосмотр, нуждается ли она в ремонте или имеет неисправности; Мы приобритём вашу машину без лишних задержек и вопросов.</div>
+                </div>
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__icon"> <img src="./img/ic-euro.svg" alt="icon"></div>
+                  <div class="slider__title">Прибыльно</div>
+                  <div class="slider__txt">Разумеется вы хотели бы продать свою машину с максимальной выгодой. Мы способны предложить вам за ваш автомобиль самую высокую цену на рынке.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="company-about">
+        <div class="company-about__container container"> 
+          <h2>О нас</h2>
+          <div class="company-about__quote">Мы действуем на рынке автомобилей уже много лет и знаем как оформить сделку быстро и без проблем.</div>
+          <div class="company-about__txt">Первое, что следует сделать заинтересованному в продаже машины человеку – связаться с нами, заполнив контактную форму на сайте или позвонив по телефону. На основании полученного со слов описания машины мы назовем предварительную стоимость. Точное ценовое предложение станет известно после проведения оценки, которую выполнит наш специалист, выехав для этого в удобное для клиента место.</div>
+          <div class="benefit benefit--simple">
+            <div class="benefit__items">
+              <div class="benefit__item">
+                <div class="benefit__img"> <img src="./img/ic-royal.svg" alt=""></div>
+                <div class="benefit__txt">Предлагаем самые высокие цены</div>
+              </div>
+              <div class="benefit__item">
+                <div class="benefit__img"> <img src="./img/ic-letter.svg" alt=""></div>
+                <div class="benefit__txt">Оформляем документы прямо на месте</div>
+              </div>
+              <div class="benefit__item">
+                <div class="benefit__img"> <img src="./img/ic-ok2.svg" alt=""></div>
+                <div class="benefit__txt">Выкупаем машины в любом состоянии</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="company-benefit">
+        <div class="company-benefit__container container"> 
+          <div class="company-benefit__grid">
+            <div class="company-benefit__column">
+              <h2>COMPANY NAME</h2>
+              <p class="company-benefit__txt">Каждый автовладелец хотя бы раз сталкивался с необходимостью продать машину. Конечно же, вы хотите селать это быстрее и с максимальной выгодой. Наши специалисты возьмут на себя все проблемы! Нам можно полностью доверять.</p>
+              <p class="company-benefit__txt">Мы не являемся кредитной организацией или ломбардом.</p>
+              <p class="company-benefit__txt">Мы покупаем ваши машины, в любом виде и состоянии.</p>
+              <p class="company-benefit__txt">Да, так просто!</p>
+              <p class="company-benefit__txt">Наша цель - купить вашу машину максимально быстро, просто и выгодно для вас.</p>
+              <div class="benefit">
+                <div class="benefit__items">
+                  <div class="benefit__item">
+                    <div class="benefit__img"> <img src="./img/ic-clock.svg" alt=""></div>
+                    <div class="benefit__txt">Быстро</div>
+                  </div>
+                  <div class="benefit__item">
+                    <div class="benefit__img"> <img src="./img/ic-qu.svg" alt=""></div>
+                    <div class="benefit__txt">Качественно</div>
+                  </div>
+                  <div class="benefit__item">
+                    <div class="benefit__img"> <img src="./img/ic-trust.svg" alt=""></div>
+                    <div class="benefit__txt">Надежно</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="company-benefit__column">
+              <ul class="list">
+                <li>Машину не надо подготавливать к продаже</li>
+                <li>Покупаем машины любого года выпуска и в любом состоянии</li>
+                <li>Покупаем машины без техосмотра и страховки</li>
+                <li>Покупаем машины не работающие и нуждающиеся в ремонте</li>
+                <li>Предложим за вашу машину больше остальных</li>
+                <li>Сразу же выплачиваем деньги</li>
+                <li>Работаем по всей Эстонии и сами выезжаем на место</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__container container">
+          <div class="footer__wrapper">
+            <div class="footer__column footer__column--logo"><img src="img/logo.svg" alt="logo"></div>
+            <div class="footer__column footer__column--company">
+              <div class="footer__title">Company name</div>
+              <ul class="footer__box"> 
+                <li class="footer__li">Reg. nr: 437568</li>
+                <li class="footer__li">Peterburi tee 710 Tallinn&nbsp;Harjumaa 34235</li>
+              </ul>
+            </div>
+            <div class="footer__column footer__column--call">
+              <div class="footer__title">Свяжись с нами</div>
+              <ul class="footer__box"> 
+                <li class="footer__li"><a class="link link--special" href="tel:+372475685">
+                    <div class="link__icon"> 
+                          <svg class="b-svg svg-phone ">
+                            <use xlink:href="svg/symbol/sprite.svg#phone"></use>
+                          </svg>
+                    </div>
+                    <div class="link__txt"> +372 475685</div></a></li>
+                <li class="footer__li"><a class="link link--special" href="mailto: info@example.ee">
+                    <div class="link__icon">
+                       <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<rect width="14.8855" height="12.9008" fill="white"/>
+<path d="M14.7544 0.921631L10.2399 6.45032L14.7544 11.979C14.8361 11.7687 14.8855 11.5365 14.8855 11.2881V1.61254C14.8855 1.3642 14.8361 1.13198 14.7544 0.921631Z" fill="#9CC634"/>
+<path d="M8.3679 7.23768L14.1378 0.161618C13.9671 0.0609202 13.7787 0 13.5772 0H1.30833C1.10686 0 0.918463 0.0609202 0.747803 0.161618L6.51768 7.23768C7.02791 7.86659 7.85766 7.86659 8.3679 7.23768Z" fill="#9CC634"/>
+<path d="M0.13112 0.921631C0.0494245 1.13198 0 1.3642 0 1.61254V11.2881C0 11.5365 0.0494245 11.7687 0.13112 11.979L4.64561 6.45032L0.13112 0.921631Z" fill="#9CC634"/>
+<path d="M8.98454 7.99775C8.13444 9.04558 6.75113 9.04558 5.90132 7.99775L5.26229 7.21045L0.747803 12.7391C0.918463 12.8398 1.10686 12.9008 1.30833 12.9008H13.5772C13.7787 12.9008 13.9671 12.8398 14.1378 12.7391L9.62328 7.21045L8.98454 7.99775Z" fill="#9CC634"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="14.8855" height="12.9008" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+                    </div>
+                    <div class="link__txt"> info@example.ee</div></a></li>
+              </ul>
+            </div>
+            <div class="footer__column footer__column--refs">
+              <div class="footer__title">Полезные ссылки</div>
+              <nav class="footer__box"> 
+                <ul>
+                  <li class="footer__li"><a class="link" href="javascript:void(0);">О нас</a></li>
+                  <li class="footer__li"><a class="link" href="javascript:void(0);">Часто задаваемые вопросы</a></li>
+                  <li class="footer__li"><a class="link" href="javascript:void(0);">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom"></div>
+    </footer>
+    <script src="js/libs-min.js"></script>
+    <script src="js/main-min.js"></script>
+  </body>
+</html>
