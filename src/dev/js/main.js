@@ -5,6 +5,16 @@ $.fn.exists = function () {
   return $(this).length;
 };
 
+// $(document).ready(function () {
+//   if ($(".js-phone").exists()) {
+//     try {
+//       $(".js-phone").mask("(999) 999-9999");
+//     } catch (err) {
+//       console.log(err);
+//     }
+//   }
+// });
+
 const projectFunc = {
   createSlider() {
     const slider = new Slider(".js-slider", 3, 0);
@@ -43,7 +53,7 @@ function init() {
                 event.preventDefault();
                 $(inputEl).val("");
                 label.removeClass("withFile");
-                label.text("Прикрепить файлы: фото товаров с браком и т.п.:");
+                label.text("Добавить фото");
                 $(elDelete).remove();
               });
 
@@ -55,6 +65,20 @@ function init() {
           }
           return false;
         });
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  if ($(".js-share").exists()) {
+    try {
+      $("a.js-share").each(function (idx, link) {
+        var template = $(link).data("share");
+        $(link).attr(
+          "href",
+          template.replace("{url}", encodeURIComponent(window.location.href))
+        );
       });
     } catch (err) {
       console.log(err);

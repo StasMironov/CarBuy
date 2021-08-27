@@ -45,6 +45,10 @@ body {
   max-width: 1024px;
   margin: 0 auto;
   box-sizing: border-box;
+
+  &--big {
+    padding: 0 25px;
+  }
 }
 
 img {
@@ -163,3 +167,7 @@ select:-webkit-autofill:focus {
 @import "./components/form-group.scss";
 @import "./components/checkbox.scss";
 @import "./components/file.scss";
+@import "./components/contacts.scss";
+@import "./components/shared.scss";
+@import "./components/menu.scss";
+@import "./components/dropdown.scss";

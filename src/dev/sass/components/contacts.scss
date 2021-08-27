@@ -1,0 +1,40 @@
+.contacts {
+  
+  &__li {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+
+    &--phone {
+      .link {
+        &__icon {
+          top: -2px;
+        }
+      }
+
+      .b-svg {
+        fill: white;
+      }
+    }
+
+    &--mail {
+      .link {
+        &__icon {
+          height: auto;
+          width: 15px;
+        }
+      }
+    }
+  }
+  .link {
+    &__txt {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    &__icon {
+      margin-right: 17px;
+      position: relative;
+    }
+  }
+}

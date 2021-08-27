@@ -10,7 +10,71 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__top">
+          <div class="header__container container container--big">
+            <div class="contacts">
+              <ul class="contacts__box"> 
+                <li class="contacts__li contacts__li--phone"><a class="link link--special" href="tel:+37243675476">
+                    <div class="link__icon"> 
+                          <svg class="b-svg svg-phone ">
+                            <use xlink:href="svg/symbol/sprite.svg#phone"></use>
+                          </svg>
+                    </div>
+                    <div class="link__txt"> +372 43675 476</div></a></li>
+                <li class="contacts__li contacts__li--mail"><a class="link link--special" href="mailto: info@example.ee">
+                    <div class="link__icon">
+                       <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M14.7544 1.91406L10.2399 7.44276L14.7544 12.9714C14.8361 12.7611 14.8855 12.5289 14.8855 12.2805V2.60497C14.8855 2.35663 14.8361 2.12442 14.7544 1.91406Z" fill="white"/>
+<path d="M8.3679 8.23005L14.1378 1.15399C13.9671 1.05329 13.7787 0.992371 13.5772 0.992371H1.30833C1.10686 0.992371 0.918463 1.05329 0.747803 1.15399L6.51768 8.23005C7.02791 8.85896 7.85766 8.85896 8.3679 8.23005Z" fill="white"/>
+<path d="M0.13112 1.91406C0.0494245 2.12442 0 2.35663 0 2.60497V12.2805C0 12.5289 0.0494245 12.7611 0.13112 12.9714L4.64561 7.44276L0.13112 1.91406Z" fill="white"/>
+<path d="M8.98454 8.99012C8.13444 10.038 6.75113 10.038 5.90132 8.99012L5.26229 8.20282L0.747803 13.7315C0.918463 13.8322 1.10686 13.8931 1.30833 13.8931H13.5772C13.7787 13.8931 13.9671 13.8322 14.1378 13.7315L9.62328 8.20282L8.98454 8.99012Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="14.8855" height="12.9008" fill="white" transform="translate(0 0.992371)"/>
+</clipPath>
+</defs>
+</svg>
+                    </div>
+                    <div class="link__txt"> info@example.ee</div></a></li>
+              </ul>
+            </div>
+            <div class="shared">
+              <ul class="shared__list">
+                <li class="shared__item"><a class="shared__link share js-share" href="#" data-share="http://vkontakte.ru/share.php?url={url}" target="_blank"><img class="share__icon img-svg" src="./img/ic-fb.svg" alt="fb"></a></li>
+                <li class="shared__item"><a class="shared__link share js-share" href="#" data-share="https://www.facebook.com/sharer/sharer.php?u={url}" target="_blank"><img class="share__icon img-svg" src="./img/ic-vk.png" alt="vk"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__container container container--big">
+            <nav class="menu"> 
+              <ul class="menu__nav">
+                <li class="menu__li active"> <a href="javascript:void(0);">ГЛАВНАЯ</a></li>
+                <li class="menu__li"><a href="javascript:void(0);">О НАС</a></li>
+                <li class="menu__li"><a href="javascript:void(0);">ОТПРАВЬТЕ НАМ ПРЕДЛОЖЕНИЕ</a></li>
+                <li class="menu__li"><a href="javascript:void(0);">ЧЗВ</a></li>
+                <li class="menu__li"><a href="javascript:void(0);">БЛОГ</a></li>
+                <li class="menu__li"><a href="javascript:void(0);">КОНТАКТЫ</a></li>
+              </ul>
+            </nav>
+            <div class="dropdown">
+              <div class="dropdown-label"><img src="img/lng-ru.png" alt="ru" title="ru"></div>
+              <div class="dropdown-menu">
+                <ul class="submenu"></ul>
+                <li class="active"><a href="javascript:void(0);"></a><img src="img/lng-ru.png" alt="ru" title="ru"></li>
+                <li><a href="javascript:void(0);"></a><img src="img/icons/lang-uk.png" alt="uk" title="uk"></li>
+                <li><a href="javascript:void(0);"></a><img src="img/icons/lang-de.png" alt="de" title="de"></li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main class="main">
       <div class="company-info">
         <div class="company-info__container container">
@@ -98,7 +162,7 @@
                 <div class="company-info__column company-info__column--phone">
                   <div class="form-group">
                     <div class="form-group__label">Телефон</div>
-                    <input class="form-group__input" type="text" name="phone">
+                    <input class="form-group__input js-phone" type="text" name="phone">
                   </div>
                 </div>
                 <div class="company-info__column company-info__column--city">
@@ -272,6 +336,7 @@
       <div class="footer__bottom"></div>
     </footer>
     <script src="js/libs-min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
     <script src="js/main-min.js"></script>
   </body>
 </html>
