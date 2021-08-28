@@ -57,4 +57,12 @@
     background-size: 10px;
     background-repeat: no-repeat;
   }
+
+  &.warning {
+    span {
+      &:before {
+        border-color: red;
+      }
+    }
+  }
 }

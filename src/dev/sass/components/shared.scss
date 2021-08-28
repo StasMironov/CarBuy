@@ -1,4 +1,6 @@
 .shared {
+  z-index: 2;
+
   &__list {
     display: flex;
     align-items: center;

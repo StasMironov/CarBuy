@@ -12,15 +12,18 @@
     max-width: 542px;
     width: 100%;
     margin-bottom: 20px;
+    opacity: 0;
   }
 
   &__txt {
     max-width: 473px;
     width: 100%;
     font-size: 12px;
+    opacity: 0;
   }
 
   h2 {
+    opacity: 0;
     margin-bottom: 26px;
 
     &:after {

@@ -5,10 +5,11 @@ block variables
 
 block content
 	main.main
-		.company-info
+		.company-info.mf-margin
 			.company-info__container.container
-				form.company-info__box
+				form.company-info__box.js-form
 					.company-info__bloc
+						h1 Информация об автомобиле
 						.company-info__title Данные автомобиля
 						.company-info__grid 
 							.company-info__column.company-info__column--mark
@@ -34,7 +35,7 @@ block content
 							.company-info__column.company-info__column--kpp
 								.form-group
 									.form-group__label КПП
-									input.form-group__input(type="number" name="kpp" min="0")
+									input.form-group__input(type="text" name="kpp" min="0")
 							.company-info__column.company-info__column--mileage
 								.form-group
 									.form-group__label Пробег
@@ -44,9 +45,9 @@ block content
 									.form-group__label Техосмотр
 									input.form-group__input(type="date" name="tech")
 							.company-info__column.company-info__column--price
-								.form-group
+								.form-group.form-group--special
 									.form-group__label Желаемая цена
-									input.form-group__input(type="number" name="price" min="0")
+									input.form-group__input.js-field.js-field-price(type="number" name="price" min="0")
 							.company-info__column.company-info__column--photo
 								label.file.js-file(for="file")
 									input#file.file__input(type="file" name="files[]" multiple accept=".pdf, .doc, .docx, .ppt, .pptx")
@@ -64,9 +65,9 @@ block content
 									.form-group__label Почта
 									input.form-group__input(type="email" name="mail")
 							.company-info__column.company-info__column--phone
-								.form-group
+								.form-group.form-group--special
 									.form-group__label Телефон
-									input.form-group__input.js-phone(type="text" name="phone")
+									input.form-group__input.js-field.js-field-phone(type="text" name="phone")
 							.company-info__column.company-info__column--city
 								.form-group
 									.form-group__label Город
@@ -74,12 +75,11 @@ block content
 							.company-info__column.company-info__column--comment
 								.form-group
 									.form-group__label Сообщение
-									textarea.form-group__input(type="text" name="comment")
+									textarea.form-group__input(name="comment")
 						label.checkbox
 							input(type='checkbox')
 							span Я согласен(на), что фирма использует мои личные данные на основе  <i>Политики конфедициальности</i> 
 						button.btn.btn--w190.btn--h22(type="submit") Отправить
-
 		.company-advantage
 			.company-advantage__container.container 
 				.company-advantage__box 
@@ -132,7 +132,7 @@ block content
 						p.company-benefit__txt Мы покупаем ваши машины, в любом виде и состоянии.
 						p.company-benefit__txt Да, так просто!
 						p.company-benefit__txt Наша цель - купить вашу машину максимально быстро, просто и выгодно для вас.
-						.benefit
+						.benefit.benefit--basic
 							.benefit__items
 								.benefit__item
 									.benefit__img 

@@ -18,9 +18,10 @@ class Slider {
       observeParents: true,
       coverflowEffect: {
         rotate: 8,
-        depth: 0,
+        depth: 10,
         modifier: 1,
         slideShadows: false,
+        stretch: 2,
       },
     };
   }

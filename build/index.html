@@ -23,7 +23,7 @@
                           </svg>
                     </div>
                     <div class="link__txt"> +372 43675 476</div></a></li>
-                <li class="contacts__li contacts__li--mail"><a class="link link--special" href="mailto: info@example.ee">
+                <li class="contacts__li contacts__li--mail"><a class="link link--special" href="mailto:info@example.ee">
                     <div class="link__icon">
                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
@@ -44,8 +44,8 @@
             </div>
             <div class="shared">
               <ul class="shared__list">
-                <li class="shared__item"><a class="shared__link share js-share" href="#" data-share="http://vkontakte.ru/share.php?url={url}" target="_blank"><img class="share__icon img-svg" src="./img/ic-fb.svg" alt="fb"></a></li>
-                <li class="shared__item"><a class="shared__link share js-share" href="#" data-share="https://www.facebook.com/sharer/sharer.php?u={url}" target="_blank"><img class="share__icon img-svg" src="./img/ic-vk.png" alt="vk"></a></li>
+                <li class="shared__item"><a class="shared__link share js-share" href="#" data-share="https://www.facebook.com/sharer/sharer.php?u={url}" target="_blank"><img class="share__icon img-svg" src="./img/ic-fb.svg" alt="fb"></a></li>
+                <li class="shared__item"><a class="shared__link share js-share" href="#" data-share="http://vkontakte.ru/share.php?url={url}" target="_blank"><img class="share__icon img-svg" src="./img/ic-vk.png" alt="vk"></a></li>
               </ul>
             </div>
           </div>
@@ -62,13 +62,13 @@
                 <li class="menu__li"><a href="javascript:void(0);">КОНТАКТЫ</a></li>
               </ul>
             </nav>
-            <div class="dropdown">
+            <div class="dropdown dropdown--lng-icons">
               <div class="dropdown-label"><img src="img/lng-ru.png" alt="ru" title="ru"></div>
               <div class="dropdown-menu">
-                <ul class="submenu"></ul>
-                <li class="active"><a href="javascript:void(0);"></a><img src="img/lng-ru.png" alt="ru" title="ru"></li>
-                <li><a href="javascript:void(0);"></a><img src="img/icons/lang-uk.png" alt="uk" title="uk"></li>
-                <li><a href="javascript:void(0);"></a><img src="img/icons/lang-de.png" alt="de" title="de"></li>
+                <ul class="submenu">
+                  <li class="active"><a href="javascript:void(0);"><img src="img/lng-ru.png" alt="ru" title="ru"></a></li>
+                  <li><a href="javascript:void(0);"><img src="img/lng-de.png" alt="de" title="de"></a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -76,10 +76,11 @@
       </div>
     </header>
     <main class="main">
-      <div class="company-info">
+      <div class="company-info mf-margin">
         <div class="company-info__container container">
-          <form class="company-info__box">
+          <form class="company-info__box js-form">
             <div class="company-info__bloc">
+              <h1>Информация об автомобиле</h1>
               <div class="company-info__title">Данные автомобиля</div>
               <div class="company-info__grid"> 
                 <div class="company-info__column company-info__column--mark">
@@ -115,7 +116,7 @@
                 <div class="company-info__column company-info__column--kpp">
                   <div class="form-group">
                     <div class="form-group__label">КПП</div>
-                    <input class="form-group__input" type="number" name="kpp" min="0">
+                    <input class="form-group__input" type="text" name="kpp" min="0">
                   </div>
                 </div>
                 <div class="company-info__column company-info__column--mileage">
@@ -131,9 +132,9 @@
                   </div>
                 </div>
                 <div class="company-info__column company-info__column--price">
-                  <div class="form-group">
+                  <div class="form-group form-group--special">
                     <div class="form-group__label">Желаемая цена</div>
-                    <input class="form-group__input" type="number" name="price" min="0">
+                    <input class="form-group__input js-field js-field-price" type="number" name="price" min="0">
                   </div>
                 </div>
                 <div class="company-info__column company-info__column--photo">
@@ -160,9 +161,9 @@
                   </div>
                 </div>
                 <div class="company-info__column company-info__column--phone">
-                  <div class="form-group">
+                  <div class="form-group form-group--special">
                     <div class="form-group__label">Телефон</div>
-                    <input class="form-group__input js-phone" type="text" name="phone">
+                    <input class="form-group__input js-field js-field-phone" type="text" name="phone">
                   </div>
                 </div>
                 <div class="company-info__column company-info__column--city">
@@ -174,7 +175,7 @@
                 <div class="company-info__column company-info__column--comment">
                   <div class="form-group">
                     <div class="form-group__label">Сообщение</div>
-                    <textarea class="form-group__input" type="text" name="comment"></textarea>
+                    <textarea class="form-group__input" name="comment"></textarea>
                   </div>
                 </div>
               </div>
@@ -246,7 +247,7 @@
               <p class="company-benefit__txt">Мы покупаем ваши машины, в любом виде и состоянии.</p>
               <p class="company-benefit__txt">Да, так просто!</p>
               <p class="company-benefit__txt">Наша цель - купить вашу машину максимально быстро, просто и выгодно для вас.</p>
-              <div class="benefit">
+              <div class="benefit benefit--basic">
                 <div class="benefit__items">
                   <div class="benefit__item">
                     <div class="benefit__img"> <img src="./img/ic-clock.svg" alt=""></div>
@@ -282,7 +283,7 @@
       <div class="footer__top">
         <div class="footer__container container">
           <div class="footer__wrapper">
-            <div class="footer__column footer__column--logo"><img src="img/logo.svg" alt="logo"></div>
+            <div class="footer__column footer__column--logo"><a href="javascript:void(0);"><img src="img/logo.svg" alt="logo"></a></div>
             <div class="footer__column footer__column--company">
               <div class="footer__title">Company name</div>
               <ul class="footer__box"> 
@@ -300,10 +301,10 @@
                           </svg>
                     </div>
                     <div class="link__txt"> +372 475685</div></a></li>
-                <li class="footer__li"><a class="link link--special" href="mailto: info@example.ee">
+                <li class="footer__li"><a class="link link--special" href="mailto:info@example.ee">
                     <div class="link__icon">
                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
+<g clip-path="url(#clip1)">
 <rect width="14.8855" height="12.9008" fill="white"/>
 <path d="M14.7544 0.921631L10.2399 6.45032L14.7544 11.979C14.8361 11.7687 14.8855 11.5365 14.8855 11.2881V1.61254C14.8855 1.3642 14.8361 1.13198 14.7544 0.921631Z" fill="#9CC634"/>
 <path d="M8.3679 7.23768L14.1378 0.161618C13.9671 0.0609202 13.7787 0 13.5772 0H1.30833C1.10686 0 0.918463 0.0609202 0.747803 0.161618L6.51768 7.23768C7.02791 7.86659 7.85766 7.86659 8.3679 7.23768Z" fill="#9CC634"/>
@@ -311,7 +312,7 @@
 <path d="M8.98454 7.99775C8.13444 9.04558 6.75113 9.04558 5.90132 7.99775L5.26229 7.21045L0.747803 12.7391C0.918463 12.8398 1.10686 12.9008 1.30833 12.9008H13.5772C13.7787 12.9008 13.9671 12.8398 14.1378 12.7391L9.62328 7.21045L8.98454 7.99775Z" fill="#9CC634"/>
 </g>
 <defs>
-<clipPath id="clip0">
+<clipPath id="clip1">
 <rect width="14.8855" height="12.9008" fill="white"/>
 </clipPath>
 </defs>
@@ -324,7 +325,7 @@
               <div class="footer__title">Полезные ссылки</div>
               <nav class="footer__box"> 
                 <ul>
-                  <li class="footer__li"><a class="link" href="javascript:void(0);">О нас</a></li>
+                  <li class="footer__li active"><a class="link" href="javascript:void(0);">О нас</a></li>
                   <li class="footer__li"><a class="link" href="javascript:void(0);">Часто задаваемые вопросы</a></li>
                   <li class="footer__li"><a class="link" href="javascript:void(0);">Контакты</a></li>
                 </ul>
@@ -334,7 +335,10 @@
         </div>
       </div>
       <div class="footer__bottom"></div>
-    </footer>
+    </footer><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"></script>
     <script src="js/libs-min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/main-min.js"></script>

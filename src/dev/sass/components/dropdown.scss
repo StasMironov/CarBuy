@@ -14,18 +14,6 @@
     }
   }
 
-  &--phone {
-    .dropdown-menu {
-      left: auto;
-      right: 0;
-      min-width: 248px;
-    }
-
-    @media (max-width: 1024px) {
-      display: none;
-    }
-  }
-
   &--lng {
     .dropdown-menu {
       left: auto;
@@ -37,7 +25,6 @@
     .dropdown-menu {
       left: auto;
       right: 0;
-      min-width: 54px;
     }
 
     img {
@@ -67,9 +54,14 @@
         }
 
         a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          // display: flex;
+          // align-items: center;
+          // justify-content: center;
+
+          img {
+            opacity: 0.6;
+            width: 100%;
+          }
 
           &:hover {
             img {
@@ -103,9 +95,9 @@
   display: none;
   position: absolute;
   left: 0;
-  top: 16px;
+  top: 13px;
   min-width: 100%;
-  padding-top: 13px;
+  padding-top: 2px;
 }
 
 .dropdown:hover .dropdown-menu {

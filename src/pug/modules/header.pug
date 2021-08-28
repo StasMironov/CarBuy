@@ -11,7 +11,7 @@ header.header
                                             +svg('phone')
                                         .link__txt  +372 43675 476
                                 li.contacts__li.contacts__li--mail
-                                    a.link.link--special(href="mailto: info@example.ee")
+                                    a.link.link--special(href="mailto:info@example.ee")
                                         .link__icon 
                                             <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g clip-path="url(#clip0)">
@@ -30,11 +30,11 @@ header.header
                     .shared
                         ul.shared__list
                             li.shared__item
-                                a.shared__link.share.js-share(href='#', data-share='http://vkontakte.ru/share.php?url={url}', target='_blank')
+                                a.shared__link.share.js-share(href='#', data-share='https://www.facebook.com/sharer/sharer.php?u={url}', target='_blank')
                                     img.share__icon.img-svg(src='./img/ic-fb.svg', alt='fb')
                             
                             li.shared__item
-                                a.shared__link.share.js-share(href='#', data-share='https://www.facebook.com/sharer/sharer.php?u={url}', target='_blank')
+                                a.shared__link.share.js-share(href='#', data-share='http://vkontakte.ru/share.php?url={url}', target='_blank')
                                     img.share__icon.img-svg(src='./img/ic-vk.png', alt='vk')
 
             .header__bottom
@@ -53,17 +53,14 @@ header.header
                                 a(href="javascript:void(0);") БЛОГ
                             li.menu__li
                                 a(href="javascript:void(0);") КОНТАКТЫ
-                    .dropdown
+                    .dropdown.dropdown--lng-icons
                         .dropdown-label
                             img(src="img/lng-ru.png" alt="ru" title="ru")
                         .dropdown-menu
                             ul.submenu
-                            li.active
-                                a(href="javascript:void(0);")
-                                img(src="img/lng-ru.png" alt="ru" title="ru")
-                            li
-                                a(href="javascript:void(0);")
-                                img(src="img/icons/lang-uk.png" alt="uk" title="uk")
-                            li
-                                a(href="javascript:void(0);")
-                                img(src="img/icons/lang-de.png" alt="de" title="de")
+                                li.active
+                                    a(href="javascript:void(0);")
+                                        img(src="img/lng-ru.png" alt="ru" title="ru")
+                                li
+                                    a(href="javascript:void(0);")
+                                        img(src="img/lng-de.png" alt="de" title="de")

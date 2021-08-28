@@ -35,6 +35,10 @@
       align-self: center;
       padding-left: 5px;
       padding-top: 4px;
+
+      a {
+        display: block;
+      }
     }
 
     &--call {
@@ -62,6 +66,10 @@
     &:not(:first-child) {
       margin-top: 6px;
     }
+
+    &.active {
+      color: #aaa;
+    }
   }
 
   .link {
@@ -70,6 +78,10 @@
       svg {
         fill: $green-1;
       }
+    }
+
+    &:hover {
+      color: #aaa;
     }
   }
 }

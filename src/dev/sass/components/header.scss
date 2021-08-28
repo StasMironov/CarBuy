@@ -3,26 +3,40 @@
   flex: 0 0 auto;
   bottom: 0;
   z-index: 300;
-  min-height: 186px;
-  background-color: gray;
+  min-height: 103px;
   font-family: "Roboto", sans-serif;
   color: white;
 
   &:after {
     position: absolute;
     content: "";
-    max-width: 886px;
-    width: 100%;
+    width: 67.7%;
     height: 276px;
-    background-color: #072446;
+    background-image: url(../img/bg-header.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
     right: 0;
     bottom: 0;
-    top: 0;
-    border-radius: 0px 0px 0px 270px;
-  }
+    top: -183px;
+    border-radius: 0 0 0 270px;
+    z-index: 1;
+    background-size: auto 100%;
 
-  @media (max-width: 1024px) {
-    min-height: 128px;
+    @media (max-width: 1700px) {
+      width: 70%;
+    }
+
+    @media (max-width: 1500px) {
+      width: 73%;
+    }
+
+    @media (max-width: 1400px) {
+      width: 75%;
+    }
+
+    @media (max-width: 1235px) {
+      width: 83.6%;
+    }
   }
 
   &__container {
@@ -42,14 +56,30 @@
 
     .contacts {
       padding-left: 60px;
+
+      .link {
+        &:hover {
+          color: $blue-2;
+
+          .link__icon {
+            .b-svg,
+            path {
+              fill: $blue-2;
+            }
+          }
+        }
+      }
     }
   }
 
   &__bottom {
+    position: relative;
     padding-right: 6px;
 
     .header__container {
       padding-top: 4px;
+      position: relative;
+      z-index: 2;
     }
   }
 

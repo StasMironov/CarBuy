@@ -6,9 +6,10 @@
     padding-left: 40px;
     max-width: 309px;
     width: 100%;
+    opacity: 0;
 
     &:not(:first-child) {
-      margin-top: 23px;
+      margin-top: 21px;
     }
 
     &:after {
@@ -17,10 +18,10 @@
       width: 22px;
       height: 22px;
       background-image: url("../img/ic-ok.svg");
-      left: 0;
-      top: 0;
       bottom: 0;
       margin: auto;
+      left: -2px;
+      top: -4px;
     }
   }
 }

@@ -33,4 +33,23 @@
       background-color: white;
     }
   }
+
+  &--special {
+    .form-group__label {
+      &:after {
+        position: absolute;
+        content: "";
+        background-color: $green-3;
+        width: 5px;
+        height: 3px;
+        right: -2px;
+        top: -3px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .warning {
+    border-color: red;
+  }
 }
